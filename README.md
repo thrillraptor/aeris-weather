@@ -1,26 +1,45 @@
-# 🌤️ Aeris
 
-Aeris is a **modern weather application** that delivers **accurate, real-time forecasts** with a clean and intuitive interface.  
-Plan your day with confidence.
+# 🌤️ Aeris Weather
 
----
+**Aeris Weather** is a modern weather application focused on **performance, accuracy, and clean UI**.  
+It provides real-time weather data and forecasts with a simple, scalable frontend architecture.
 
-## ✨ Features
-- 📍 Real-time weather updates based on location  
-- 📊 Detailed forecasts 
-- 🌎 Global city search  
-- 🎨 Intuitive, modern UI design  
-- 🔔 Weather alerts and notifications  
 
----
+## Features
 
-## 🛠️ Tech Stack
+-   Location-based real-time weather data
+    
+-   Detailed daily and 3+ days forecasts
+    
+-   Global city search
+    
+-   Weather alerts and notifications
+    
+-   Responsive, accessible UI
+    
 
-**Frontend** - React / Next.js
+## Tech Stack
 
-**Styling** - Tailwind CSS / Shadcn 
+-   **Framework:** React / Next.js
+    
+-   **Styling:** Tailwind CSS + shadcn/ui
+    
+-   **Icons:** Lucide
+    
+-   **API:** WeatherAPI
+    
 
-**Icons** - [lucide](https://lucide.dev/icons/)
+## Goals
 
-**API** - [weatherapi](https://www.weatherapi.com/)
+-   Minimal, maintainable UI
+    
+-   Fast client-side data fetching
+    
+-   Scalable component architecture
+    
+-   Clean developer experience
+    
+    
+## API
 
+Weather data is sourced from **WeatherAPI**, providing current conditions, forecasts, and alerts.
