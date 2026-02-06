@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aeris - A Weather App",
+  title: "Aeris Weather",
   description:
     "Aeris is a modern weather application that delivers accurate, real-time forecasts with an intuitive interface.",
 };
@@ -26,6 +26,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.svg" />
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

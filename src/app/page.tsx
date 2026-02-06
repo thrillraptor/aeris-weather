@@ -1,11 +1,11 @@
-import WeatherHome from "@/components/WeatherHome";
+import Home from "@/app/(home)/page";
 import { Toaster } from "sonner";
 
-export default function Home() {
+export default function App() {
   return (
     <div>
+      <Home />
       <Toaster position="top-right" theme="system" />
-      <WeatherHome />
     </div>
   );
 }
