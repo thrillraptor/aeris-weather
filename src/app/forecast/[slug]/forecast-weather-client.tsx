@@ -1,8 +1,6 @@
 "use client";
 
-import { getForecastWeather } from "@/services/weather-api";
 import { useQuery } from "@tanstack/react-query";
-import { useParams } from "next/navigation";
 import {
   Card,
   CardContent,
@@ -37,11 +35,9 @@ import {
   TrendingDown,
 } from "lucide-react";
 import Link from "next/link";
+import { getForecastWeather } from "@/services/api";
 
-export default function ForecastPage() {
-  const { id } = useParams<{ id: string }>();
-  const query = decodeURIComponent(id);
-
+export default function ForecastWeatherClient({ query }: { query: string }) {
   const { data, isError, isLoading } = useQuery({
     queryKey: ["forecast", query],
     queryFn: () => getForecastWeather({ query, days: 3 }),
@@ -195,7 +191,7 @@ export default function ForecastPage() {
             </p>
             <p className="text-sm text-slate-500 ml-8 flex items-center gap-2">
               <Clock className="h-4 w-4" />
-              {formatDate(location.localtime)} •{" "}
+              {formatDate(location.localtime)} |{" "}
               {new Date(location.localtime).toLocaleTimeString("en-PK", {
                 hour: "2-digit",
                 minute: "2-digit",
